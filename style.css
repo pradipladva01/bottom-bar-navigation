@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600&display=swap');
 
 :root {
     --home-primary-color: #5530B2;
@@ -19,7 +19,7 @@ html {
     width: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Sora', sans-serif;
 }
 
 body {
@@ -38,7 +38,7 @@ body {
     justify-content: space-around;
     padding: 30px 30px;
     border-radius: 60px;
-    min-width: 350px;
+    min-width: 320px;
 }
 
 .navigation-item {
@@ -138,4 +138,13 @@ footer p {
 footer a {
     color: #FFF;
     font-size: 12px;
+}
+
+@media (max-width:428px) {
+    .navigation{
+        padding: 20px;
+    }
+    .navigation-item{
+        padding: 20px 10px;
+    }
 }
