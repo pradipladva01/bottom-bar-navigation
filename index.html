@@ -1,55 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bottom Bar Navigation</title>
     <link rel="stylesheet" href="./style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <ul class="navigation">
-        <li class="navigation-item navigation-item--home active" data-item="home">
-            <div>
-                <svg class="navigation-item__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path
-                        d="M21 20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.49a1 1 0 01.386-.79l8-6.222a1 1 0 011.228 0l8 6.222a1 1 0 01.386.79V20zm-2-1V9.978l-7-5.444-7 5.444V19h14z" />
-                </svg>
-                <span class="navigation-item__text">Home</span>
-            </div>
-        </li>
-        <li class="navigation-item navigation-item--likes" data-item="likes">
-            <div>
-                <svg class="navigation-item__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none"
-                    stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M4 16C1 12 2 6 7 4s8 2 9 4c1-2 5-6 10-4s5 8 2 12-12 12-12 12-9-8-12-12z" />
-                </svg>
-                <span class="navigation-item__text">Likes</span>
-            </div>
-        </li>
-        <li class="navigation-item navigation-item--search" data-item="search">
-            <div>
-                <svg class="navigation-item__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129">
-                    <path
-                        d="M51.6 96.7c11 0 21-3.9 28.8-10.5l35 35c.8.8 1.8 1.2 2.9 1.2s2.1-.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-35-35c6.5-7.8 10.5-17.9 10.5-28.8 0-24.9-20.2-45.1-45.1-45.1-24.8 0-45.1 20.3-45.1 45.1 0 24.9 20.3 45.1 45.1 45.1zm0-82c20.4 0 36.9 16.6 36.9 36.9C88.5 72 72 88.5 51.6 88.5S14.7 71.9 14.7 51.6c0-20.3 16.6-36.9 36.9-36.9z" />
-                </svg>
-                <span class="navigation-item__text">Search</span>
-            </div>
-        </li>
-        <li class="navigation-item navigation-item--profile" data-item="profile">
-            <div>
-                <svg class="navigation-item__icon" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M250 291.6c-52.8 0-95.8-43-95.8-95.8s43-95.8 95.8-95.8 95.8 43 95.8 95.8-43 95.8-95.8 95.8zm0-164.3c-37.7 0-68.4 30.7-68.4 68.4s30.7 68.4 68.4 68.4 68.4-30.7 68.4-68.4-30.7-68.4-68.4-68.4z" />
-                    <path
-                        d="M386.9 401.1h-27.4c0-60.4-49.1-109.5-109.5-109.5s-109.5 49.1-109.5 109.5h-27.4c0-75.5 61.4-136.9 136.9-136.9s136.9 61.4 136.9 136.9z" />
-                </svg>
-                <span class="navigation-item__text">Profile</span>
-            </div>
-        </li>
+      <li class="navigation-item navigation-item--home active" data-item="home">
+        <div>
+          <svg
+            class="navigation-item__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M21 20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.49a1 1 0 01.386-.79l8-6.222a1 
+              1 0 011.228 0l8 6.222a1 1 0 01.386.79V20zm-2-1V9.978l-7-5.444-7 5.444V19h14z"
+            />
+          </svg>
+          <span class="navigation-item__text">Home</span>
+        </div>
+      </li>
+      <li class="navigation-item navigation-item--likes" data-item="likes">
+        <div>
+          <svg
+            class="navigation-item__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32"
+            fill="none"
+            stroke="#000"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          >
+            <path
+              d="M4 16C1 12 2 6 7 4s8 2 9 4c1-2 5-6 10-4s5 8 2 12-12 12-12 12-9-8-12-12z"
+            />
+          </svg>
+          <span class="navigation-item__text">Likes</span>
+        </div>
+      </li>
+      <li class="navigation-item navigation-item--search" data-item="search">
+        <div>
+          <svg
+            class="navigation-item__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 129 129"
+          >
+            <path
+              d="M51.6 96.7c11 0 21-3.9 28.8-10.5l35 35c.8.8 1.8 1.2 2.9 1.2s2.1-.4
+              2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-35-35c6.5-7.8 10.5-17.9 10.5-28.8
+               0-24.9-20.2-45.1-45.1-45.1-24.8 0-45.1 20.3-45.1 45.1 0 24.9 20.3
+                45.1 45.1 45.1zm0-82c20.4 0 36.9 16.6 36.9 36.9C88.5 72 72 88.5 51.6 
+                88.5S14.7 71.9 14.7 51.6c0-20.3 16.6-36.9 36.9-36.9z"
+            />
+          </svg>
+          <span class="navigation-item__text">Search</span>
+        </div>
+      </li>
+      <li class="navigation-item navigation-item--profile" data-item="profile">
+        <div>
+          <svg
+            class="navigation-item__icon"
+            viewBox="0 0 500 500"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M250 291.6c-52.8 0-95.8-43-95.8-95.8s43-95.8 95.8-95.8 95.8 43
+               95.8 95.8-43 95.8-95.8 95.8zm0-164.3c-37.7 0-68.4 30.7-68.4 68.4s30
+               .7 68.4 68.4 68.4 68.4-30.7 68.4-68.4-30.7-68.4-68.4-68.4z"
+            />
+            <path
+              d="M386.9 401.1h-27.4c0-60.4-49.1-109.5-109.5-109.5s-109.5
+               49.1-109.5 109.5h-27.4c0-75.5 61.4-136.9 136.9-136.9s136.9
+                61.4 136.9 136.9z"
+            />
+          </svg>
+          <span class="navigation-item__text">Profile</span>
+        </div>
+      </li>
     </ul>
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
