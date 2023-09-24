@@ -20,6 +20,14 @@ html {
     margin: 0;
     padding: 0;
     font-family: 'Sora', sans-serif;
+    position: relative;
+}
+body::after{
+    position: absolute;
+    content: "Design By Code Alchemy Lab";
+    bottom: 30px;
+    right: 30px;
+    color: white;
 }
 
 body {
